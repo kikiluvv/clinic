@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--RemixIcon Link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <title>Carla Dirmann | FNP-C</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div id="nav-wrapper" class="nav-wrapper">
+            <div class="nav">
+                <div class="logo-container">
+                    <div id="logo-img" class="logo-img"></div>
+                    <div class="quick-ref">
+                        <div class="address">
+                            <i class="ri-map-pin-line ri-xl"></i>
+                            <p>123 N Address St</p>
+                        </div>
+                        <div class="phone">
+                            <i class="ri-phone-fill ri-xl"></i>
+                            <a href="tel:208-123-4567">208-123-4567</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="nav-list">
+                    <div id="home-link" class="nav-item">Home</div>
+                    <div id="services-link" class="nav-item">Services</div>
+                    <div id="providers-link" class="nav-item">Providers</div>
+                    <div id="insurance-link" class="nav-item">Insurance</div>
+                    <div id="contact-link" class="nav-item">Contact</div>
+                </div>
+
+            </div>
+        </div>
+        <div id="top"></div>
+        <div id="content-wrapper" class="content-wrapper">
+            <div class="about-image">
+                <div class="parallax">
+                    <div class="about-text-container">
+                        <h2 class="about-header">Inclusive Healthcare for All Ages and Backgrounds</h2>
+                        <hr class="about-hr">
+                        <p class="about-text">
+                            At [Clinic Name], we understand that healthcare can be overwhelming. That's why we strive to
+                            create a welcoming and supportive environment for all of our patients. Come see the
+                            difference for
+                            yourself.
+                        </p>
+                        <div class="about-links">
+                            <a class="about-link-child" href="#contact">Book an Appointment</a>
+                            <a class="about-link-child" href="tel:2081234567">Speak With a Nurse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="section-hr">
+            <div id="services-section">
+                <div class="services-left">
+                    <div class="services-header">
+                        <h2 class="services-header-text">Our Services</h2>
+                    </div>
+                    <div class="service-list">
+                        <div class="service-child active-service" onclick="showService('service1')"
+                            data-service="service1">
+                            <i class="ri-health-book-line ri-xl service-icon"></i>
+                            Primary Care
+                        </div>
+                        <div class="service-child notactive-service" onclick="showService('service2')"
+                            data-service="service2">
+                            <i class="ri-capsule-fill ri-xl service-icon"></i>
+                            Reproductive Health
+                        </div>
+                        <div class="service-child notactive-service" onclick="showService('service3')"
+                            data-service="service3">
+                            <i class="ri-heart-line ri-xl service-icon"></i>
+                            Geriatric Medicine
+                        </div>
+                    </div>
+                </div>
+                <div class="services-right">
+                    <div id="service-image" class="img-container"></div>
+                    <p id="service-description">
+                        Welcome to our primary care clinic, where your health is our top priority. Our team of dedicated
+                        healthcare professionals provides personalized and comprehensive care for patients of all
+                        ages. From routine check - ups to chronic disease management, we offer a wide range of services
+                        to help you achieve and maintain optimal health. With a focus on preventative care, patient
+                        education, and compassion, we strive to be your trusted partner in healthcare.
+                    </p>
+                </div>
+            </div>
+            <div class="book-now">
+                <div class="book-text">
+                    <h2 class="book-header">Currently accepting new patients.<br>Schedule an appointment now!</h2>
+                </div>
+                <div class="book-hr-cont">
+                    <hr class="book-hr">
+                </div>
+                <div class="book-btn-container">
+                    <a class="book-button" href="#">Book an Appointment</a>
+                </div>
+            </div>
+            <div id="providers-section">
+                <div class="providers-header">
+                    <h2 class="providers-header-text">Our Providers</h2>
+                </div>
+                <div class="profiles">
+                    <div class="profile-child">
+                        <div class="profile-image-container">
+                            <img class="profile-image" src="/assetts/index/profile-placeholder.png">
+                        </div>
+                        <div class="profile-text">
+                            <h2 class="profile-name">Carla Dirmann - FNP-C</h2>
+                            <p class="profile-description">
+                                ** Insert Biography Here! **
+                            </p>
+                        </div>
+                    </div>
+                    <div class="profile-child">
+                        <div class="profile-image-container">
+                            <img class="profile-image" src="/assetts/index/profile-placeholder.png">
+                        </div>
+                        <div class="profile-text">
+                            <h2 class="profile-name">Provider 2</h2>
+                            <p class="profile-description">
+                                ** Insert Biography Here! **
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="covid-container">
+                <div class="covid-left">
+                    <div class="covid-header">
+                        <h2 class="covid-header-text">Safety Precautions</h2>
+                    </div>
+                    <div class="covid-icons">
+                        <i class="ri-surgical-mask-line ri-3x"></i>
+                        <i class="ri-shield-cross-line ri-3x"></i>
+                        <i class="ri-hospital-line ri-3x"></i>
+                    </div>
+                </div>
+                <div class="covid-right">
+                    <p class="covid-text">
+                        The coronavirus (COVID-19) is presenting significant challenges for all of us, but
+                        especially older adults and people with chronic conditions. Our team is committed to providing
+                        our clients with the necessary support and care while minimizing the risk of exposure to
+                        COVID-19. We understand the importance of taking precautions to protect our clients and our team
+                        members, and we are continuously monitoring and adapting our protocols to ensure their safety.
+                    </p>
+                    <ul class="covid-list-container">
+                        <li class="covid-list">Daily health screenings for every in-home clinician</li>
+                        <li class="covid-list">Perform risk assessments on every client, both new and existing</li>
+                        <li class="covid-list">Ensure our staff members wear personal protective equipment (PPE) and
+                            follow hygiene guidelines such as washing their hands frequently</li>
+                        <li class="covid-list">Regularly sanitize and disinfect our facilities and equipment to minimize
+                            the spread of the virus.</li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+            <div id="insurance-section">
+                <div class="insurance-left">
+                    <div class="insurance-header">
+                        <h2 class="insurance-header-text">Insurance Partners</h2>
+                        <p class="insurance-description">We currently accept these health plans as part of in-network
+                            insurance payments.<br></p>
+                    </div>
+                    <ul class="insurance-list">
+                        <li class="insurance-child">Company 1</li>
+                        <li class="insurance-child">Company 2</li>
+                        <li class="insurance-child">Company 3</li>
+                        <li class="insurance-child">Company 4</li>
+                    </ul>
+                </div>
+                <div class="insurance-right">
+                    <div class="insurance-image-grid">
+                        <div class="insurance-image-child">
+                            <img class="child-img" src="/assetts/index/medicare.png">
+                        </div>
+                        <div class="insurance-image-child">
+                            <img class="child-img" src="/assetts/index/medicaid.png">
+                        </div>
+                        <div class="insurance-image-child">
+                            <img class="child-img" src="/assetts/index/bluecross.png">
+                        </div>
+                        <div class="insurance-image-child">
+                            <img class="child-img" src="/assetts/index/selecthealth.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="section-hr">
+            <div id="contact-section">
+                <div class="contact-wrapper">
+                    <div class="contact-left">
+                        <div class="map-container">
+                            <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                                referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+                              &q=Space+Needle,Seattle+WA">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <div class="contact-header">
+                            <h2 class="contact-header-text">Contact Us Today!</h2>
+                        </div>
+                        <div class="contact-right-header">
+                            <p class="contact-address">123 N Boise St.</p>
+                            <p class="contact-phone">Tel: <a href="tel:208-123-4567">208-123-4567</a></p>
+                            <p class="contact-fax">Fax: <a href="fax:208-123-4567">208-123-4567</a></p>
+                            <p class="contact-email">Email: <a href="mailto:info@clinic.com">info@clinic.com</a></p>
+                        </div>
+                        <div class="contact-form-container">
+                            <form id="contact-form" action="/submit-form" method="post">
+                                <div class="contact-form-names">
+                                    <div class="form-first-name">
+                                        <label for="first-name">First Name:</label>
+                                        <input type="text" id="first-name" name="first-name" autocomplete="name"
+                                            required>
+                                    </div>
+                                    <div class="form-last-name">
+                                        <label for="last-name">Last Name:</label>
+                                        <input type="text" id="last-name" name="last-name"
+                                            autocomplete="additional-name" required>
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" autocomplete="email" required>
+                                </div>
+                                <div class="form-phone">
+                                    <label for="phone">Phone:</label>
+                                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+                                </div>
+                                <div class="form-message">
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message"></textarea>
+                                </div>
+                                <button class="form-submit" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="section-hr">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+                    <div class="footer-logo-container">
+                        <div class="footer-logo"></div>
+                    </div>
+                    <div class="footer-legal">
+                        <a class="legal-child" href="#">Privacy Policy</a>
+                        <a class="legal-child" href="#">Terms of Use</a>
+                        <a class="legal-child" href="#">Notice of Non-Discrimination</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-copyright">
+                    <p class="footer-text">© 2023 Clinic Name - All Rights Reserved | Website by KikiLuvv</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/js/nav.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
