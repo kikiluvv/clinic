@@ -18,7 +18,7 @@
     --active-button: rgb(177, 217, 255);
     --section-bg-light: rgb(0, 61, 165);
     --highlight-light: rgb(102 159 179);
-    ;
+    
     --bg-dark: #ffff;
     --nav-bg-dark: #ffff;
     --highlight-dark: #ffff;
@@ -638,6 +638,7 @@ body {
     height: 15%;
     width: 100%;
 }
+
 
 .form-message {
     display: flex;

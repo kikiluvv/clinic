@@ -79,6 +79,11 @@
     margin: 2vh;
 }
 
+.phone-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
 .phone {
     position: relative;
     display: flex;
