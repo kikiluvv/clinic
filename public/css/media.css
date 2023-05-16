@@ -1,25 +1,172 @@
-
-
-
-
-@media (max-width: 900px) {
-    .about-header {
-        font-size: xx-large;
+@media (max-width: 768px) {
+    .content-wrapper {
+        overflow-x: hidden;
     }
-  }
-
-@media (max-width: 500px) {
     .nav-wrapper {
-        height: 10vh;
+        height: 15vh;
+    }
+    .nav-list {
+        display: none;
     }
     .logo-container {
         height: 100%;
+    }
+    .logo-img{
+        width: 60%;
     }
     .address {
         display: none;
     }
     .phone-number {
         display: none;
+    }
+    .email-address {
+        display: none;
+    }
+    .nav-email-icon {
+        font-size: xx-large;
+    }
+    .nav-phone-icon {
+        font-size: xx-large;
+    }
+    .content-wrapper {
+        top: 0vh;
+    }
+    .about-image {
+        background-color: white;
+        background-image: none;
+        height: auto;
+    }
+    .parallax {
+        background-image: url(/assetts/index/geriatric.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .about-text-container {
+        position: relative;
+        display: flex;
+        width: 80%;
+    }
+    .about-links {
+        flex-direction: row;
+    }
+    .about-link-child {
+        margin-left: 1vw;
+        margin-right:1vw;
+    }
+    #services-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .services-left {
+        width: 100%;
+    }
+    .services-right {
+        width: 100%;
+    }
+    .service-child {
+        width: 100%;
+        height: 5vh;
+        margin: 0;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+    }
+    #service-image {
+        width: 100%;
+        height: 45vh;
+    }
+    .book-now {
+        flex-direction: row;
+    }
+    .book-header {
+        padding: 10px;
+    }
+    .book-text {
+        width: 60%;
+    }
+    .book-hr-cont {
+        display: none;
+    }
+    .book-btn-container{
+        width: 40%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .book-button {
+        width: 60%;
+    }
+    .profiles {
+        flex-direction: column;
+    }
+    .covid-container {
+        flex-direction: column;
+    }
+    .covid-left {
+        width: 100%;
+    }
+    .covid-right {
+        width: 100%;
+    }
+    .covid-icons {
+        width: 100%;
+        justify-content: space-around;
+    }
+    #contact-section {
+        height: auto;
+    }
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    .contact-left {
+        width: 100%;
+        height: 45vh;
+    }
+    .contact-right {
+        width: 100%;
+    }
+    #contact-form {
+        width: 100%;
+    }
+    .form-submit {
+        margin-top: 3vh;
+    }
+    .footer-wrapper {
+        height: auto;
+    }
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-logo-container {
+        width: 100%;
+        height: 10vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-wrapper {
+        overflow-x: hidden;
+    }
+    .nav-wrapper {
+        height: 10vh;
+    }
+    .logo-container {
+        height: 100%;
+    }
+    .logo-img{
+        width: 60%;
+    }
+    .address {
+        display: none;
+    }
+    .phone-number {
+        display: none;
+    }
+    .email-address {
+        display: none;
+    }
+    .nav-email-icon {
+        font-size: xx-large;
     }
     .nav-phone-icon {
         font-size: xx-large;
@@ -51,7 +198,7 @@
         flex-direction: column;
     }
     .about-link-child {
-        margin: 6vw;
+        margin: 0vw;
     }
     #services-section {
         flex-direction: column;
@@ -132,5 +279,28 @@
     .footer-logo-container {
         width: 100%;
         height: 10vh;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about-header {
+        font-size: xx-large;
+    }
+    .about-links {
+        flex-direction: column;
+    }
+    .about-link-child {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+  }
+
+@media (max-width: 350px) {
+    .about-header {
+        font-size: x-large;
+    }
+    .about-text {
+        font-size: large;
     }
 }
