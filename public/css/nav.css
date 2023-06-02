@@ -37,6 +37,7 @@
     margin: 10px;
     color: var(--alt-header-text-light);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .logo-container {
@@ -49,18 +50,20 @@
     background-color: var(--nav-bg-light);
 }
 
-.logo-img {
+.logo-img-container {
     position: relative;
     display: flex;
     width: 50%;
     height: 100%;
+}
+
+.logo-img {
+    width: 100%;
     background-image: url(/assetts/index/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.logo {
-    width: 35%;
+    margin-left: 0.25vw;
+    cursor: pointer;
 }
 
 .quick-ref {
@@ -68,7 +71,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 45%;
+    width: 70%;
 }
 
 .address {
@@ -118,6 +121,23 @@
     color: var(--alt-header-text-light);
 }
 
+.portal {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+
+.portal-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.portal-link {
+    color: var(--alt-header-text-light);
+}
+
 .ri-map-pin-line {
     margin-right: 5px;
     color: var(--alt-header-text-light);
@@ -129,6 +149,11 @@
 }
 
 .ri-mail-line {
+    margin-right: 5px;
+    color: var(--alt-header-text-light);
+}
+
+.ri-user-line {
     margin-right: 5px;
     color: var(--alt-header-text-light);
 }
