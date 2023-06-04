@@ -35,18 +35,18 @@
                         </div>
                         <div class="email">
                             <a class="email-wrap" href="mailto:info@clinic.com"><i
-                                    class="ri-mail-line ri-xl nav-email-icon"></i>
+                                    class="ri-mail-line ri-xl nav-email-icon nav-icon"></i>
                                 <p class="email-address">info@clinic.com</p>
                             </a>
                         </div>
                         <div class="phone">
                             <a class="phone-wrap" href="tel:208-123-4567"><i
-                                    class="ri-phone-line ri-xl nav-phone-icon"></i>
+                                    class="ri-phone-line ri-xl nav-phone-icon nav-icon"></i>
                                 <p class="phone-number">208-123-4567</p>
                             </a>
                         </div>
                         <div class="portal">
-                            <a class="portal-wrap" href="#"><i class="ri-user-line ri-xl"></i>
+                            <a class="portal-wrap" href="#"><i class="ri-user-line ri-xl nav-icon"></i>
                                 <p class="portal-link">Patient Portal</p>
                             </a>
                         </div>
@@ -62,10 +62,10 @@
 
             </div>
         </div>
-        <div id="top"></div>
         <div id="content-wrapper" class="content-wrapper">
+            <div id="top"></div>
             <div class="about-image">
-                <div class="parallax">
+                <div class="parallax" id="parallax">
                     <div class="about-text-container">
                         <h2 class="about-header">Inclusive Healthcare for All Ages and Backgrounds</h2>
                         <hr class="about-hr">
@@ -85,38 +85,50 @@
             </div>
             <hr class="section-hr">
             <div id="services-section">
-                <div class="services-left">
-                    <div class="services-header">
-                        <h2 class="services-header-text">Our Services</h2>
-                    </div>
-                    <div class="service-list">
-                        <div class="service-child active-service" onclick="showService('service1')"
-                            data-service="service1">
-                            <i class="ri-health-book-line ri-xl service-icon"></i>
-                            <p class="service-title">Family Medicine</p>
-                        </div>
-                        <div class="service-child notactive-service" onclick="showService('service2')"
-                            data-service="service2">
-                            <i class="ri-capsule-fill ri-xl service-icon"></i>
-                            <p class="service-title">Internal Medicine</p>
-                        </div>
-                        <div class="service-child notactive-service" onclick="showService('service3')"
-                            data-service="service3">
-                            <i class="ri-heart-line ri-xl service-icon"></i>
-                            <p class="service-title">Geriatric Medicine</p>
-                        </div>
-                    </div>
+                <div class="services-header">
+                    <h2 class="services-header-text">Our Services</h2>
                 </div>
-                <div class="services-right">
-                    <div id="service-image" class="img-container"></div>
-                    <p id="service-description">
-                        Welcome to our family primary care clinic, where your health is our top priority. Our team of
-                        dedicated
-                        healthcare professionals provides personalized and comprehensive care for patients of all
-                        ages. From routine check - ups to chronic disease management, we offer a wide range of services
-                        to help you achieve and maintain optimal health. With a focus on preventative care, patient
-                        education, and compassion, we strive to be your trusted partner in healthcare.
-                    </p>
+                <div class="services-container">
+
+
+                    <div class="services-left">
+                        <div class="service-list">
+                            <div class="service-child active-service" onclick="showService('service1')"
+                                data-service="service1">
+                                <i class="ri-health-book-line ri-xl service-icon"></i>
+                                <p class="service-title">Family Medicine</p>
+                            </div>
+                            <div class="service-child notactive-service" onclick="showService('service2')"
+                                data-service="service2">
+                                <i class="ri-capsule-fill ri-xl service-icon"></i>
+                                <p class="service-title">Internal Medicine</p>
+                            </div>
+                            <div class="service-child notactive-service" onclick="showService('service3')"
+                                data-service="service3">
+                                <i class="ri-heart-line ri-xl service-icon"></i>
+                                <p class="service-title">Geriatric Medicine</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-right">
+                        <div class="service-image-container">
+                            <div id="service-image" class="img-container"></div>
+                        </div>
+                        <div class="service-description-container">
+                            <p id="service-description" class="service-description">
+                                Welcome to our family primary care clinic, where your health is our top priority. Our
+                                team of
+                                dedicated
+                                healthcare professionals provides personalized and comprehensive care for patients of
+                                all
+                                ages. From routine check - ups to chronic disease management, we offer a wide range of
+                                services
+                                to help you achieve and maintain optimal health. With a focus on preventative care,
+                                patient
+                                education, and compassion, we strive to be your trusted partner in healthcare.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="book-now">
@@ -292,6 +304,9 @@
                     <p class="footer-text">© 2023 Riverside Primary Care - All Rights Reserved | Website by KikiLuvv</p>
                 </div>
             </div>
+        </div>
+        <div class="scroll-button" id="scroll-button">
+            <i class="ri-arrow-up-s-line"></i>
         </div>
     </div>
     </div>

@@ -18,7 +18,7 @@
     --active-button: rgb(177, 217, 255);
     --section-bg-light: rgb(0, 61, 165);
     --highlight-light: rgb(102 159 179);
-    
+
     --bg-dark: #ffff;
     --nav-bg-dark: #ffff;
     --highlight-dark: #ffff;
@@ -32,16 +32,36 @@
 
 body {
     width: 100vw;
-    height: 200vh;
+    height: auto;
     background-color: var(--bg-light);
 }
 
 #top {
     position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10vh;
 }
 
+.scroll-button {
+    position: fixed;
+    display: flex;
+    right: 2vw;
+    bottom: 3vh;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: #84848473;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
 
-
+.scroll-button:hover {
+    background-color: #848484ee;
+    border: 1px solid var(--active-button);
+    cursor: pointer;
+}
 
 
 /*---------------------
@@ -107,7 +127,7 @@ body {
     color: var(--alt-header-text-light);
     font-size: x-large;
     font-style: italic;
-    text-align:start;
+    text-align: start;
 }
 
 .about-hr {
@@ -119,6 +139,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    max-width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,7 +152,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -10;
 }
 
 .parallax {
@@ -161,7 +182,7 @@ body {
     width: 50%;
 }
 
-.about-link-child{
+.about-link-child {
     font-size: 14px;
     color: #fff;
     background-color: var(--alt-header-text-light);
@@ -169,7 +190,7 @@ body {
     border: solid #148aff 2px;
     box-shadow: none;
     border-radius: 50px;
-    transition : 1000ms;
+    transition: 1000ms;
     transform: translateY(0);
     display: flex;
     flex-direction: row;
@@ -182,10 +203,10 @@ body {
     justify-content: center;
     margin-left: 1vw;
     margin-right: 1vw;
-    }
+}
 
-.about-link-child:hover{
-    transition : 1000ms;
+.about-link-child:hover {
+    transition: 1000ms;
     background-color: #fff;
     color: #0066cc;
     border: solid 2px #0066cc;
@@ -237,7 +258,7 @@ body {
     border: solid #148aff 2px;
     box-shadow: none;
     border-radius: 50px;
-    transition : 1000ms;
+    transition: 1000ms;
     transform: translateY(0);
     display: flex;
     flex-direction: row;
@@ -257,8 +278,8 @@ body {
     width: 35%;
 }
 
-.book-button:hover{
-    transition : 1000ms;
+.book-button:hover {
+    transition: 1000ms;
     padding: 10px 50px;
     width: 30vh;
     background-color: var(--alt-header-text-light);
@@ -274,10 +295,20 @@ body {
 #services-section {
     position: relative;
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    padding: 30px;
+    background-color: white;
+}
+
+.services-container {
+    position: relative;
+    display: flex;
     flex-direction: row;
     width: 100%;
-    height: 70vh;
-    padding: 30px;
+    height: 90vh;
+    background-color: white;
 }
 
 .services-left {
@@ -298,7 +329,7 @@ body {
     background-color: var(--active-button);
 }
 
-.active-service p{
+.active-service p {
     text-decoration: underline;
     font-weight: bold;
 }
@@ -316,13 +347,28 @@ body {
     background-image: url(/assetts/index/family.jpg);
 }
 
+.service-image-container {
+    position: relative;
+    display: flex;
+    height: 60%;
+}
+
+.service-description-container {
+    position: relative;
+    display: flex;
+    height: 40%;
+}
+
 #service-image {
     position: relative;
     display: flex;
     height: 100%;
+    width: 100%;
+    max-width: 100%;
     background-image: url(/assetts/index/family.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 0.5s ease;
 }
 
 .service-list {
@@ -340,10 +386,13 @@ body {
     position: relative;
     align-items: center;
     margin: 5px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
 }
 
 .service-icon {
     margin-right: 1vw;
+    margin-left: 1vw;
     text-decoration: none;
     list-style: none;
 }
@@ -352,6 +401,10 @@ body {
     text-decoration: none;
 }
 
+.service-description {
+    padding: 10px;
+    transition: all 0.5s ease;
+}
 
 /*---------------------
 |   Providers Section |
@@ -402,6 +455,7 @@ body {
 
 .profile-image {
     width: 100%;
+    max-width: 100%;
 }
 
 .profile-text {
@@ -525,6 +579,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    max-width: 100%;
 }
 
 .insurance-list {
@@ -670,7 +725,7 @@ body {
     border: solid #148aff 2px;
     box-shadow: none;
     border-radius: 50px;
-    transition : 1000ms;
+    transition: 1000ms;
     transform: translateY(0);
     display: flex;
     flex-direction: row;
@@ -682,8 +737,8 @@ body {
     justify-content: center;
 }
 
-.form-submit:hover{
-    transition : 1000ms;
+.form-submit:hover {
+    transition: 1000ms;
     padding: 10px 50px;
     width: 50vh;
     background-color: #ffff;
@@ -718,7 +773,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 60%;
 }
 
 .footer-logo {
@@ -735,6 +790,8 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
 }
 
 .legal-child {

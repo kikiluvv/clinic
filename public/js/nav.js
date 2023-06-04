@@ -10,6 +10,8 @@ const servLink = document.getElementById('services-link');
 const provLink = document.getElementById('providers-link');
 const insuLink = document.getElementById('insurance-link');
 const contLink = document.getElementById('contact-link');
+const scrollBtn = document.getElementById('scroll-button');
+const content = document.getElementById('content-wrapper');
 
 
 // Function to handle smooth scrolling with an offset
@@ -42,3 +44,13 @@ insuLink.addEventListener('click', () => {
 contLink.addEventListener('click', () => {
     scrollToSection(contact);
 });
+
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  });
+  
+  
